@@ -237,3 +237,57 @@ hour=a//3600
 b=a%3600
 min=b//60
 print("The time ",a,"seconds is",hour,"hours",min,"minutes",sec,"seconds")
+
+import math
+print("Program to check whether a number is Automorphic or not")
+n=int(input("Enter a number:"))
+sq=n*n
+n1=n
+c=0
+while(n>0):
+    c=c+1
+    n=n//10
+a=sq%math.pow(10,c)
+if(a==n1):
+    print("The number is Automorphic")
+else:
+    print("The number is not Automorphic")
+
+
+print("Program to print n elements of fibonocci series")
+n=int(input("Enter the value of n:"))
+a,b,c=0,1,1
+if(n==1):
+    print (a)
+elif(n==2):
+    print(a,b)
+else:
+    print(a)
+    print(b)
+    i=3
+    while(i<=n):
+        c=a+b
+        a=b
+        b=c
+        print(c)
+        i=i+1
+
+print("Program to print the decimal equalent of a binary number")
+n=int(input("Enter the binary number:"))
+s,i=0,0
+while(n>0):
+  r=n%10
+  s=s+(r*(math.pow(2,i)))
+  n=n//10
+  i=i+1
+print("The binary equalent is:",s)
+
+print("Program to find the sum of factors of a number")
+n=int(input("Enter a number:"))
+i=1
+s=0
+while(i<=n):
+  if(n%i==0):
+    s=s+i
+  i=i+1
+print("Sum of factors=",s)
