@@ -201,3 +201,39 @@ a=int(input("Enter a number to divide it with:"))
 d=n//a
 r=n%a
 print(d,"is the quotient",r,"is the remainder")
+
+print("Program to swap variable:")
+n1=int(input("Enter 1st number:"))
+n2=int(input("Enter 2nd number:"))
+n1=n1*n2
+n2=n1/n2
+n1=n1/n2
+print("1st Number=",n1,"2nd Number=",n2)
+
+print("Program to print the values of AP.")
+n=int(input("Enter the number of elements:"))
+a=int(input("Enter the value of a:"))
+d=int(input("Enter the value of d:"))
+b=1;
+while(n>=b):
+  s=a+((b-1)*d)
+  print(s)
+  b=b+1
+
+
+
+print("Program to accept number of days and convert into years months and weeks ")
+n=int(input("Enter the number of days:"))
+year=n//365
+a=n%365;
+months=a//30
+days=a%30
+print("Number of years:",year,"Numbers of months:",months,"Number of days:",days)
+
+print("Program to convert seconds into hours mins and seconds:")
+a=int(input("Enter the time:"))
+sec=a%60
+hour=a//3600
+b=a%3600
+min=b//60
+print("The time ",a,"seconds is",hour,"hours",min,"minutes",sec,"seconds")
